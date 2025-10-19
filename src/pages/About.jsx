@@ -90,9 +90,12 @@ export default function AboutPage() {
                 className="mx-auto h-24 w-24 rounded-full object-cover"
               />
               <h3 className="mt-4 font-semibold">Brad</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                Founder & Head of Product
-              </p>
+              <span className="text-sm text-gray-600 dark:text-gray-300">
+                Founder & Head of Product 
+              </span>
+              <span className="block mt-2 text-sm text-gray-600 dark:text-gray-300">
+                Lead Engineer & Designer
+              </span>
             </div>
           </div>
         </section>
