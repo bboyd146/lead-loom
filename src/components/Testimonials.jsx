@@ -1,33 +1,33 @@
 const Testimonials = () => {
-  const testimonials = [
+const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Marketing Director",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-      quote:
-        "LeadLoom transformed our lead generation process. We've seen a 47% increase in qualified leads since implementation.",
-      rating: 5,
+        name: "Sarah Johnson",
+        role: "Marketing Director",
+        image:
+            "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+        quote:
+            "LeadLoom transformed our lead generation process. We've seen a 47% increase in qualified leads since implementation.",
+        rating: 5,
     },
     {
-      name: "Michael Chen",
-      role: "CEO, TechStart Inc.",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-      quote:
-        "The automation features saved us over $15,000 in operational costs in the first quarter alone. Incredible ROI.",
-      rating: 5,
+        name: "Michael Chen",
+        role: "CEO, TechStart Inc.",
+        image:
+            "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+        quote:
+            "The automation features saved us over $15,000 in operational costs in the first quarter alone. Incredible ROI.",
+        rating: 5,
     },
     {
-      name: "Emily Rodriguez",
-      role: "Sales Manager",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-      quote:
-        "Integration was seamless and our sales team loves the real-time notifications for hot leads. Game changer!",
-      rating: 5,
+        name: "Emily Rodriguez",
+        role: "Sales Manager",
+        image:
+            "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+        quote:
+            "Integration was seamless and our sales team loves the real-time notifications for hot leads. Game changer!",
+        rating: 5,
     },
-  ];
+];
 
   return (
     <section className="bg-gray-50 py-16">

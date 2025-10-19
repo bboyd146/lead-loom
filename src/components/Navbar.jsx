@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+    const location = useLocation();
+
+    const navLinks = [
+        { to: "/", label: "Home" },
+        { to: "/features", label: "Features" },
+        { to: "/pricing", label: "Pricing" },
+        { to: "/about", label: "About" },
+    ];
+
     return (
         <nav className="bg-white shadow-sm sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,30 +35,19 @@ const Navbar = () => {
                             </span>
                         </div>
                         <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                            <Link
-                                to="/"
-                                className="border-primary text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                to="/features"
-                                className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                            >
-                                Features
-                            </Link>
-                            <Link
-                                to="/pricing"
-                                className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                            >
-                                Pricing
-                            </Link>
-                            <Link
-                                to="/about"
-                                className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                            >
-                                About
-                            </Link>
+                            {navLinks.map(link => (
+                                <Link
+                                    key={link.to}
+                                    to={link.to}
+                                    className={`${
+                                        location.pathname === link.to
+                                            ? "border-primary text-gray-900"
+                                            : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                                    } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium`}
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
                         </div>
                     </div>
                     <div className="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
