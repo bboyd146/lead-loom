@@ -33,7 +33,7 @@ const CTA = () => {
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 space-x-4 relative z-10">
             <div className="inline-flex rounded-md shadow">
               <a
-                href="#"
+                href="https://buy.stripe.com/00w8wHauNdLU34N1lb5c402"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500"
               >
                 Start Setup - $1,000
