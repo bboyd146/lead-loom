@@ -13,7 +13,7 @@ const Footer = () => {
   const socialLinks = [
     { name: "twitter", href: "https://twitter.com/" },
     { name: "instagram", href: "https://www.instagram.com/lead_automations/" },
-    { name: "linkedin", href: "https://www.linkedin.com/" },
+    { name: "linkedin", href: "https://www.linkedin.com/in/bradleydboyd/" },
   ];
 
   // helper: open link as a fallback (useful if default anchor navigation is blocked)
